@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gh-latest-downloader"
+dynamic = ["version"]
+description = "Download the latest release of every repo of a GitHub user/org, picking the file that fits your OS and CPU."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Ahmed" }]
+keywords = ["github", "releases", "downloader", "cli", "automation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/gh-latest-downloader"
+Issues = "https://github.com/YOUR_USERNAME/gh-latest-downloader/issues"
+Changelog = "https://github.com/YOUR_USERNAME/gh-latest-downloader/blob/main/CHANGELOG.md"
+
+[project.scripts]
+gh-latest = "gh_latest.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gh_latest*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "gh_latest.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]

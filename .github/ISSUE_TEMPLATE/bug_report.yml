@@ -1,0 +1,36 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command or link used
+      placeholder: python get_latest.py https://github.com/owner --dry-run
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Paste the console output. Never include your GitHub token.
+      render: text
+  - type: textarea
+    id: assets
+    attributes:
+      label: Release file names (if the wrong file was picked)
+      render: text
+  - type: input
+    id: system
+    attributes:
+      label: OS, CPU and Python version
+      placeholder: Windows 11 x64, Python 3.12
+    validations:
+      required: true
