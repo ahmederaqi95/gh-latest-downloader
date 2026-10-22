@@ -32,9 +32,9 @@ dependencies = []
 dev = ["pytest>=7", "ruff>=0.5"]
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/gh-latest-downloader"
-Issues = "https://github.com/YOUR_USERNAME/gh-latest-downloader/issues"
-Changelog = "https://github.com/YOUR_USERNAME/gh-latest-downloader/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/ahmederaqi95/gh-latest-downloader"
+Issues = "https://github.com/ahmederaqi95/gh-latest-downloader/issues"
+Changelog = "https://github.com/ahmederaqi95/gh-latest-downloader/blob/main/CHANGELOG.md"
 
 [project.scripts]
 gh-latest = "gh_latest.cli:main"

@@ -1,6 +1,6 @@
 # gh-latest-downloader
 
-![CI](https://github.com/YOUR_USERNAME/gh-latest-downloader/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/ahmederaqi95/gh-latest-downloader/actions/workflows/ci.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 

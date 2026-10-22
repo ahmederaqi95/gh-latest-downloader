@@ -5,7 +5,7 @@ Thanks for helping! Bug reports, new file-naming rules and features are all welc
 ## Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/gh-latest-downloader.git
+git clone https://github.com/ahmederaqi95/gh-latest-downloader.git
 cd gh-latest-downloader
 python -m venv .venv
 .venv\Scripts\activate        # Linux/macOS: source .venv/bin/activate
